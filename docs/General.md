@@ -8,7 +8,8 @@
 微观层面设计见 [Micro.md](Micro.md)  
 游戏剧情见 [Plot.md](Plot.md)
 美术设计见 [Art.md](Art.md)  
-待办列表见 [Todo.md](Todo.md)
+待办列表见 [Todo.md](Todo.md)  
+事件列表见 [Events.md](Events.md)
 
 ## 参考游戏
 
