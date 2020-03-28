@@ -14,7 +14,7 @@ public class EventWindowControl : MonoBehaviour
 {
     private Transform EventWindowTr;
     private Text EventDescription;
-    private Image EventImage;
+    [SerializeField] private Image EventImage;
     private Button ConfirmButton;
     private CanvasControl Canvas;
 
@@ -22,7 +22,7 @@ public class EventWindowControl : MonoBehaviour
     {
         EventWindowTr = GetComponent<Transform>();
         EventDescription = EventWindowTr.Find("Text").GetComponent<Text>();
-        EventImage = GetComponentInChildren<Image>();
+        EventImage = EventWindowTr.Find("Image").gameObject.GetComponent<Image>();
         ConfirmButton = GetComponentInChildren<Button>();
         Canvas = GetComponentInParent<CanvasControl>();
         gameObject.SetActive(false);
@@ -37,6 +37,11 @@ public class EventWindowControl : MonoBehaviour
         ConfirmButton.onClick.AddListener(EventWindowCleanup);
         gameObject.SetActive(true);
         Canvas.DisableOtherWindows(gameObject);
+    }
+
+    public void ShowDefaultEvent(Sprite Image)
+    {
+        ShowEvent(new EventInformation { Image = Image, Description = "test" });
     }
 
     // Clean up when confirm button is clicked
