@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class cameracontal : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public Transform player;
+    private Cinemachine.CinemachineVirtualCamera VCam;
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        transform.position=new Vector3(player.position.x,player.position.y,-10) ;
+        VCam = GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
+        VCam.Follow = GameObject.Find("Followee").transform;
     }
 }
