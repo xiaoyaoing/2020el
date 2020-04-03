@@ -9,6 +9,7 @@ public class playermove : MonoBehaviour
     public float MaxHorizontalSpeed = 10;
     public float MaxVerticalSpeed = 10;
     private float GravityScale = 10;
+    private BoxCollider2D JumpBox;
     public bool is_touching_ground = false;
     public LayerMask ground;
     public Collider2D coll;
@@ -16,6 +17,7 @@ public class playermove : MonoBehaviour
 
     void Start()
     {
+        JumpBox = GetComponent<BoxCollider2D>();
     }
 
 
@@ -32,7 +34,7 @@ public class playermove : MonoBehaviour
         }
 
         rb.AddForce(new Vector2(5, 0));
-        if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers(ground))
+        if (Input.GetButtonDown("Jump") && JumpBox.IsTouchingLayers(ground))
             GravityScale = -GravityScale;
         rb.gravityScale = GravityScale;
         if (Mathf.Abs(rb.velocity.x) > MaxHorizontalSpeed)
