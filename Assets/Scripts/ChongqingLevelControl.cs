@@ -7,6 +7,7 @@ public class ChongqingLevelControl : LevelControl
     private playermove Player;
     private Rigidbody2D PlayerRb;
     private GameObject QTEPanel;
+    private GameObject TrappedNet;
 
     private bool IsInQTE;
 
@@ -33,18 +34,20 @@ public class ChongqingLevelControl : LevelControl
         if (!BlowPaused || BlowOnce)
             Breathe();
     }
-    public void StartQTE()
+    public void StartQTE(GameObject Net)
     {
         IsInQTE = true;
         CurrentButtonIndex = 0;
         LastButtonPressedTime = Time.time;
         QTEPanel.SetActive(true);
+        TrappedNet = Net;
     }
     public void ExitQTE()
     {
         IsInQTE = false;
         Player.Untrap();
         QTEPanel.SetActive(false);
+        TrappedNet.SetActive(false);
     }
     private void QTE()
     {

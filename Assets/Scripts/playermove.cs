@@ -14,6 +14,7 @@ public class playermove : MonoBehaviour
     public LayerMask ground;
     public Collider2D coll;
     private bool Trapped = false;
+    private float ImmuneUntil;
 
     void Start()
     {
@@ -58,7 +59,19 @@ public class playermove : MonoBehaviour
     public void Untrap()
     {
         Trapped = false;
+        SetImmue();
         rb.WakeUp();
+        rb.velocity = new Vector2(MaxHorizontalSpeed, MaxVerticalSpeed * GravityScale / Mathf.Abs(GravityScale));
+    }
+
+    public bool IsImmue()
+    {
+        return Time.time <= ImmuneUntil;
+    }
+
+    public void SetImmue()
+    {
+        ImmuneUntil = Time.time + 3f;
     }
 
 }
