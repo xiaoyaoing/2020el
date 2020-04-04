@@ -15,6 +15,8 @@ public class playermove : MonoBehaviour
     public Collider2D coll;
     private bool Trapped = false;
     private float ImmuneUntil;
+    public Transform CellPos;
+    public bool IsInfecting;
 
     void Start()
     {
@@ -31,6 +33,14 @@ public class playermove : MonoBehaviour
         if (Trapped)
         {
             rb.velocity = new Vector2(0, 0);
+            return;
+        }
+        else if (IsInfecting)
+        {
+            float DeltaX = CellPos.position.x - transform.position.x;
+            float DeltaY = CellPos.position.y - transform.position.y;
+            float Distance = Mathf.Sqrt(DeltaX * DeltaX + DeltaY * DeltaY);
+            rb.velocity = new Vector2(DeltaX / Distance, DeltaY / Distance);
             return;
         }
 
@@ -74,4 +84,9 @@ public class playermove : MonoBehaviour
         ImmuneUntil = Time.time + 3f;
     }
 
+    public void InfectCell(Transform pos)
+    {
+        CellPos = pos;
+        IsInfecting = true;
+    }
 }
