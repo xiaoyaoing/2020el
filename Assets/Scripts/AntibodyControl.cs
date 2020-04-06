@@ -10,14 +10,14 @@ public class AntibodyControl : MonoBehaviour
     private Transform PlayerTr, AntibodyTr;
     private bool label = false;
     public int x = 0;
-    private playermove Player;
+    private PlayerControl Player;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<BoxCollider2D>();
-        PlayerTr = GameObject.Find("player-climb-1").transform;
+        PlayerTr = GameObject.Find("Player").transform;
         AntibodyTr = transform;
-        Player = GameObject.Find("player-climb-1").GetComponent<playermove>();
+        Player = GameObject.Find("Player").GetComponent<PlayerControl>();
     }
 
     // Update is called once per frame

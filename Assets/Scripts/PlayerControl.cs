@@ -3,25 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class playermove : MonoBehaviour
+public class PlayerControl : MonoBehaviour
 {
-    public Rigidbody2D rb;
-    public float MaxHorizontalSpeed = 10;
-    public float MaxVerticalSpeed = 10;
+    private Rigidbody2D PlayerRb;
+    private float MaxHorizontalSpeed = 10;
+    private float MaxVerticalSpeed = 10;
     private float GravityScale = 10;
     private BoxCollider2D JumpBox;
-    public bool is_touching_ground = false;
-    public LayerMask ground;
-    public Collider2D coll;
+    private LayerMask GroundMask;
     private bool Trapped = false;
     private float ImmuneUntil;
-    public Transform CellPos;
-    public bool IsInfecting;
+    private Transform CellPos;
+    private bool IsInfecting;
     private int AntibodyAttached = 0;
 
     void Start()
     {
         JumpBox = GetComponent<BoxCollider2D>();
+        PlayerRb = GetComponent<Rigidbody2D>();
+        GroundMask = LayerMask.GetMask("Ground");
     }
 
 
@@ -35,7 +35,7 @@ public class playermove : MonoBehaviour
             return;
         if (Trapped)
         {
-            rb.velocity = new Vector2(0, 0);
+            PlayerRb.velocity = new Vector2(0, 0);
             return;
         }
         else if (IsInfecting)
@@ -43,38 +43,38 @@ public class playermove : MonoBehaviour
             float DeltaX = CellPos.position.x - transform.position.x;
             float DeltaY = CellPos.position.y - transform.position.y;
             float Distance = Mathf.Sqrt(DeltaX * DeltaX + DeltaY * DeltaY);
-            rb.velocity = new Vector2(DeltaX / Distance, DeltaY / Distance);
+            PlayerRb.velocity = new Vector2(DeltaX / Distance, DeltaY / Distance);
             return;
         }
 
-        rb.AddForce(new Vector2(5, 0));
-        if (Input.GetButtonDown("Jump") && JumpBox.IsTouchingLayers(ground))
+        PlayerRb.AddForce(new Vector2(5, 0));
+        if (Input.GetButtonDown("Jump") && JumpBox.IsTouchingLayers(GroundMask))
             GravityScale = -GravityScale;
-        rb.gravityScale = GravityScale;
-        if (Mathf.Abs(rb.velocity.x) > MaxHorizontalSpeed)
-            rb.velocity = new Vector2(MaxHorizontalSpeed * rb.velocity.x / Mathf.Abs(rb.velocity.x), rb.velocity.y);
-        if (Mathf.Abs(rb.velocity.y) > MaxVerticalSpeed)
-            rb.velocity = new Vector2(rb.velocity.x, MaxVerticalSpeed * rb.velocity.y / Mathf.Abs(rb.velocity.y));
+        PlayerRb.gravityScale = GravityScale;
+        if (Mathf.Abs(PlayerRb.velocity.x) > MaxHorizontalSpeed)
+            PlayerRb.velocity = new Vector2(MaxHorizontalSpeed * PlayerRb.velocity.x / Mathf.Abs(PlayerRb.velocity.x), PlayerRb.velocity.y);
+        if (Mathf.Abs(PlayerRb.velocity.y) > MaxVerticalSpeed)
+            PlayerRb.velocity = new Vector2(PlayerRb.velocity.x, MaxVerticalSpeed * PlayerRb.velocity.y / Mathf.Abs(PlayerRb.velocity.y));
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "white cell")
-            Destroy(coll.gameObject);
+            Destroy(gameObject);
 
     }
 
     public void Trap()
     {
         Trapped = true;
-        rb.Sleep();
+        PlayerRb.Sleep();
     }
 
     public void Untrap()
     {
         Trapped = false;
         SetImmue();
-        rb.WakeUp();
-        rb.velocity = new Vector2(MaxHorizontalSpeed, MaxVerticalSpeed * GravityScale / Mathf.Abs(GravityScale));
+        PlayerRb.WakeUp();
+        PlayerRb.velocity = new Vector2(MaxHorizontalSpeed, MaxVerticalSpeed * GravityScale / Mathf.Abs(GravityScale));
     }
 
     public bool IsImmue()

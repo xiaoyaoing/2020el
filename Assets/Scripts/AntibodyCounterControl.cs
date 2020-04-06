@@ -6,12 +6,12 @@ using UnityEngine.UI;
 public class AntibodyCounterControl : MonoBehaviour
 {
     Text Number;
-    playermove Player;
+    PlayerControl Player;
     // Start is called before the first frame update
     void Start()
     {
         Number = GetComponent<Text>();
-        Player = GameObject.Find("Player").GetComponentInChildren<playermove>();
+        Player = GameObject.Find("Player").GetComponentInChildren<PlayerControl>();
     }
 
     // Update is called once per frame
