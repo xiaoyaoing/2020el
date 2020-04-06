@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChongqingLevelControl : LevelControl
 {
-    private PlayerControl Player;
+    private PlayerTrapControl Player;
     private Rigidbody2D PlayerRb;
     private GameObject QTEPanel;
     private GameObject TrappedNet;
@@ -24,7 +24,7 @@ public class ChongqingLevelControl : LevelControl
 
     void Start()
     {
-        Player = GameObject.Find("Player").GetComponentInChildren<PlayerControl>();
+        Player = GameObject.Find("Player").GetComponentInChildren<PlayerTrapControl>();
         PlayerRb = GameObject.Find("Player").GetComponentInChildren<Rigidbody2D>();
         QTEPanel = GameObject.Find("Canvas").transform.Find("QTE Hint").gameObject;
     }

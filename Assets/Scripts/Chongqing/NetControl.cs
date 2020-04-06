@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class NetControl : MonoBehaviour
 {
-    private PlayerControl Player;
+    private PlayerTrapControl Player;
     private ChongqingLevelControl LevelControl;
     // Start is called before the first frame update
     void Start()
     {
-        Player = GameObject.Find("Player").GetComponentInChildren<PlayerControl>();
+        Player = GameObject.Find("Player").GetComponentInChildren<PlayerTrapControl>();
         LevelControl = GameObject.Find("LevelControl").GetComponent<ChongqingLevelControl>();
     }
 

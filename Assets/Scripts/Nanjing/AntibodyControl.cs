@@ -10,14 +10,15 @@ public class AntibodyControl : MonoBehaviour
     private Transform PlayerTr, AntibodyTr;
     private bool label = false;
     public int x = 0;
-    private PlayerControl Player;
+    private PlayerAntibodyControl Player;
+    private bool Attached = false;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<BoxCollider2D>();
         PlayerTr = GameObject.Find("Player").transform;
         AntibodyTr = transform;
-        Player = GameObject.Find("Player").GetComponent<PlayerControl>();
+        Player = GameObject.Find("Player").GetComponent<PlayerAntibodyControl>();
     }
 
     // Update is called once per frame
@@ -42,10 +43,11 @@ public class AntibodyControl : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if(!Attached && collision.CompareTag("Player"))
         {
             Player.AttachAntibody();
-            gameObject.SetActive(false);
+            Attached = true;
+            Destroy(gameObject);
         }
     }
 }

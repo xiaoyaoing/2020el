@@ -5,12 +5,12 @@ using UnityEngine;
 public class NormalCellControl : MonoBehaviour
 {
     Cinemachine.CinemachineVirtualCamera VCam;
-    PlayerControl Player;
+    PlayerMoveControl Player;
     float CaptureTime = -1;
     void Start()
     {
         VCam = GameObject.Find("Camera").GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
-        Player = GameObject.Find("Player").GetComponentInChildren<PlayerControl>();
+        Player = GameObject.Find("Player").GetComponentInChildren<PlayerMoveControl>();
     }
 
     void Update()

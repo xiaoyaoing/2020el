@@ -3,21 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerControl : MonoBehaviour
+public class PlayerMoveControl : MonoBehaviour
 {
     private Rigidbody2D PlayerRb;
-    private float MaxHorizontalSpeed = 10;
-    private float MaxVerticalSpeed = 10;
-    private float GravityScale = 10;
     private BoxCollider2D JumpBox;
     private LayerMask GroundMask;
-    private bool Trapped = false;
-    private float ImmuneUntil;
-    private Transform CellPos;
-    private bool IsInfecting;
-    private int AntibodyAttached = 0;
 
-    public float PushingForce = 5;
+    [SerializeField] private float PushingForce = 5;
+    private float GravityScale = 10;
+    private float MaxHorizontalSpeed = 10;
+    private float MaxVerticalSpeed = 10;
+
+    private bool IsInfecting;
+    private Transform InfectCellPos;
 
     void Start()
     {
@@ -26,24 +24,16 @@ public class PlayerControl : MonoBehaviour
         GroundMask = LayerMask.GetMask("Ground");
     }
 
-
     void Update()
     {
-        move();
+        Move();
     }
-    void move()
+    void Move()
     {
-        if (AntibodyAttached >= 3)
-            return;
-        if (Trapped)
+        if (IsInfecting)
         {
-            PlayerRb.velocity = new Vector2(0, 0);
-            return;
-        }
-        else if (IsInfecting)
-        {
-            float DeltaX = CellPos.position.x - transform.position.x;
-            float DeltaY = CellPos.position.y - transform.position.y;
+            float DeltaX = InfectCellPos.position.x - transform.position.x;
+            float DeltaY = InfectCellPos.position.y - transform.position.y;
             float Distance = Mathf.Sqrt(DeltaX * DeltaX + DeltaY * DeltaY);
             PlayerRb.velocity = new Vector2(DeltaX / Distance, DeltaY / Distance);
             return;
@@ -63,6 +53,7 @@ public class PlayerControl : MonoBehaviour
         if (Mathf.Abs(PlayerRb.velocity.y) > MaxVerticalSpeed)
             PlayerRb.velocity = new Vector2(PlayerRb.velocity.x, MaxVerticalSpeed * PlayerRb.velocity.y / Mathf.Abs(PlayerRb.velocity.y));
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "white cell")
@@ -70,43 +61,16 @@ public class PlayerControl : MonoBehaviour
 
     }
 
-    public void Trap()
-    {
-        Trapped = true;
-        PlayerRb.Sleep();
-    }
-
-    public void Untrap()
-    {
-        Trapped = false;
-        SetImmue();
-        PlayerRb.WakeUp();
-        PlayerRb.velocity = new Vector2(MaxHorizontalSpeed, MaxVerticalSpeed * GravityScale / Mathf.Abs(GravityScale));
-    }
-
-    public bool IsImmue()
-    {
-        return Time.time <= ImmuneUntil;
-    }
-
-    public void SetImmue()
-    {
-        ImmuneUntil = Time.time + 3f;
-    }
-
     public void InfectCell(Transform pos)
     {
-        CellPos = pos;
+        InfectCellPos = pos;
         IsInfecting = true;
     }
 
-    public void AttachAntibody()
-    {
-        ++AntibodyAttached;
-    }
-
-    public int GetAttachedAntibody()
-    {
-        return AntibodyAttached;
-    }
+    public float GetMaxHorizontalSpeed() { return MaxHorizontalSpeed; }
+    public void SetMaxHorizontalSpeed(float Speed) { MaxHorizontalSpeed = Speed; }
+    public float GetMaxVerticalSpeed() { return MaxVerticalSpeed; }
+    public void SetMaxVerticalSpeed(float Speed) { MaxVerticalSpeed = Speed; }
+    public float GetGravityScale() { return GravityScale; }
+    public void SetGravityScale(float Scale) { GravityScale = Scale; }
 }
