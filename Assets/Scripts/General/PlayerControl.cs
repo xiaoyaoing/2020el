@@ -17,6 +17,8 @@ public class PlayerControl : MonoBehaviour
     private bool IsInfecting;
     private int AntibodyAttached = 0;
 
+    public float PushingForce = 5;
+
     void Start()
     {
         JumpBox = GetComponent<BoxCollider2D>();
@@ -47,7 +49,12 @@ public class PlayerControl : MonoBehaviour
             return;
         }
 
-        PlayerRb.AddForce(new Vector2(5, 0));
+        // Apply apporiate pushing force based player's currend speed to reduce glitch.
+        if (MaxHorizontalSpeed - PlayerRb.velocity.x > Time.fixedDeltaTime * PushingForce / PlayerRb.mass)
+            PlayerRb.AddForce(new Vector2(PushingForce, 0));
+        else if (MaxHorizontalSpeed > PlayerRb.velocity.x)
+            PlayerRb.AddForce(new Vector2((MaxHorizontalSpeed - PlayerRb.velocity.x) / Time.fixedDeltaTime * PlayerRb.mass, 0));
+
         if (Input.GetButtonDown("Jump") && JumpBox.IsTouchingLayers(GroundMask))
             GravityScale = -GravityScale;
         PlayerRb.gravityScale = GravityScale;

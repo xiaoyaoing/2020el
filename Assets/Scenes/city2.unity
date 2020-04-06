@@ -808,6 +808,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2568132064030687271, guid: 79d8a44d55038a94d828f24484e3413c,
+        type: 3}
+      propertyPath: PushingForce
+      value: 500
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79d8a44d55038a94d828f24484e3413c, type: 3}
 --- !u!1 &382323225
