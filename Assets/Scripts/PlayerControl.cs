@@ -17,6 +17,7 @@ public class playermove : MonoBehaviour
     private float ImmuneUntil;
     public Transform CellPos;
     public bool IsInfecting;
+    private int AntibodyAttached = 0;
 
     void Start()
     {
@@ -30,6 +31,8 @@ public class playermove : MonoBehaviour
     }
     void move()
     {
+        if (AntibodyAttached >= 3)
+            return;
         if (Trapped)
         {
             rb.velocity = new Vector2(0, 0);
@@ -88,5 +91,15 @@ public class playermove : MonoBehaviour
     {
         CellPos = pos;
         IsInfecting = true;
+    }
+
+    public void AttachAntibody()
+    {
+        ++AntibodyAttached;
+    }
+
+    public int GetAttachedAntibody()
+    {
+        return AntibodyAttached;
     }
 }

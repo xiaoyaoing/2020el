@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cameracontal : MonoBehaviour
+public class CameraControl : MonoBehaviour
 {
     private Cinemachine.CinemachineVirtualCamera VCam;
 
