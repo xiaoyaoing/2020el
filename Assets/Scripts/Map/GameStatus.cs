@@ -35,7 +35,7 @@ public static class GameStatus
             ["NE"] = false,
             ["C"] = true,
             ["NW"] = false,
-            ["SW"] = true
+            ["SW"] = false
         };
         LevelTriedCount = LevelTriedCount = 0;
     }

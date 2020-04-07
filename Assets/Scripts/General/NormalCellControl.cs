@@ -6,11 +6,13 @@ public class NormalCellControl : MonoBehaviour
 {
     Cinemachine.CinemachineVirtualCamera VCam;
     PlayerMoveControl Player;
+    WhitecellControl Whitecell;
     float CaptureTime = -1;
     void Start()
     {
         VCam = GameObject.Find("Camera").GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
         Player = GameObject.Find("Player").GetComponentInChildren<PlayerMoveControl>();
+        Whitecell = GameObject.Find("Whitecell").GetComponent<WhitecellControl>();
     }
 
     void Update()
@@ -28,6 +30,8 @@ public class NormalCellControl : MonoBehaviour
             GameObject Followee = new GameObject("_Followee");
             Followee.transform.position = Player.transform.Find("Followee").position;
             VCam.Follow = Followee.transform;
+            if (Whitecell)
+                Whitecell.Stop();
         }
     }
 }
