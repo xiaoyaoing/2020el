@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WorldMap.unity
     guid: 2fd115e733eb2df4fbca30a0a64304d2
+  - enabled: 1
+    path: Assets/Scenes/Chongqing.unity
+    guid: e4bd47a933684ec49963fbc0e6342270
+  - enabled: 1
+    path: Assets/Scenes/Nanjing.unity
+    guid: b726fce977c28624f91f9a48f3510856
   m_configObjects: {}
