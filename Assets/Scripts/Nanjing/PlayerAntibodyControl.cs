@@ -15,7 +15,7 @@ public class PlayerAntibodyControl : MonoBehaviour
     public void AttachAntibody()
     {
         ++AntibodyAttached;
-        Move.SetMaxHorizontalSpeed(Move.GetMaxHorizontalSpeed() - 5);
+        Move.SetMaxHorizontalSpeed(Move.GetMaxHorizontalSpeed() - 2);
     }
 
     public int GetAttachedAntibodyCount()
