@@ -25,7 +25,7 @@ public class ProteaseSpawnerControl : MonoBehaviour
 
     private void Respawn()
     {
-        ProteaseControl NewProteaseControl = Instantiate<GameObject>(ProteasePrefab).GetComponent<ProteaseControl>();
+        ProteaseControl NewProteaseControl = Instantiate<GameObject>(ProteasePrefab, transform).GetComponent<ProteaseControl>();
         NewProteaseControl.SetSpeed(ProteaseSpeed);
         NewProteaseControl.SetVertexes(Vertexes);
         NewProteaseControl.transform.position = transform.position;

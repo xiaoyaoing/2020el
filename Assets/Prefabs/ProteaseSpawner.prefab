@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c4856b8e11c3a549bc5197a337a0173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RespawnInterval: 2
+  RespawnInterval: 1
   ProteaseSpeed: 10
   ProteasePrefab: {fileID: 5284003660493328834, guid: e82b6fa071316a04daab26d1d8a46503,
     type: 3}

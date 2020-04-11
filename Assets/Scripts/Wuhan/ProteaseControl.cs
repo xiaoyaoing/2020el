@@ -6,8 +6,8 @@ public class ProteaseControl : MonoBehaviour
 {
     private LevelControl Level;
     private Rigidbody2D ProteaseRb;
-    private Vector2[] Vertexes;
-    private int TargetIndex = 0;
+    [SerializeField] private Vector2[] Vertexes;
+    [SerializeField] private int TargetIndex = 0;
     private float Speed = 10;
     void Start()
     {
@@ -25,7 +25,7 @@ public class ProteaseControl : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
             Level.OnLevelFail();
-        else if (collision.CompareTag("ProteaseVertex"))
+        else if (collision.CompareTag("ProteaseVertex") && (TargetIndex >= Vertexes.Length || (Vector2)collision.transform.position == Vertexes[TargetIndex]))
         {
             ++TargetIndex;
             if (TargetIndex == Vertexes.Length)
