@@ -12,7 +12,9 @@ public class NormalCellControl : MonoBehaviour
     {
         VCam = GameObject.Find("Camera").GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
         Player = GameObject.Find("Player").GetComponentInChildren<PlayerMoveControl>();
-        Whitecell = GameObject.Find("Whitecell").GetComponent<WhitecellControl>();
+        GameObject WhitecellObject = GameObject.Find("Whitecell");
+        if (WhitecellObject)
+            Whitecell = WhitecellObject.GetComponent<WhitecellControl>();
     }
 
     void Update()
