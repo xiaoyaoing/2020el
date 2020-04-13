@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class CityControl : MonoBehaviour
 {
@@ -19,6 +21,29 @@ public class CityControl : MonoBehaviour
     {
         CityTr = GetComponent<Transform>();
         EventWindow = GameObject.Find("Canvas").transform.Find("Event Window").gameObject.GetComponent<EventWindowControl>();
+        OnSelectCity.CallBack = new UnityAction(() =>
+        {
+            SceneManager.LoadScene(LevelSceneName);
+            GameStatus.LevelStart(LevelRegionName);
+            GameStatus.OnLevelSuccess += () =>
+            {
+                EventWindowControl NewEventWindow = GameObject.Find("Canvas").transform.Find("Event Window").GetComponent<EventWindowControl>();
+                NewEventWindow.AfterStart = new UnityAction(() => NewEventWindow.ShowEvent(OnLevelSuccess));
+            };
+            GameStatus.OnLevelFail += () =>
+            {
+                EventWindowControl NewEventWindow = GameObject.Find("Canvas").transform.Find("Event Window").GetComponent<EventWindowControl>();
+                NewEventWindow.AfterStart = new UnityAction(() => NewEventWindow.ShowEvent(OnLevelFail));
+            };
+        });
+        OnLevelSuccess.CallBack = new UnityAction(() =>
+        {
+            GameStatus.LevelSuccess();
+        });
+        OnLevelFail.CallBack = new UnityAction(() =>
+        {
+            GameStatus.LevelFail();
+        });
     }
 
     // When selected, focus camera on current city, and show level brief
@@ -30,5 +55,6 @@ public class CityControl : MonoBehaviour
 
         var GameCam = Camera.main.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
         GameCam.Follow = CityTr;
+        EventWindow.ShowEvent(OnSelectCity);
     }
 }
