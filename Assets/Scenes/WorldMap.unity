@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 171045797}
   - component: {fileID: 171045800}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: Guangzhou
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -537,7 +537,7 @@ GameObject:
   - component: {fileID: 228567842}
   - component: {fileID: 228567843}
   m_Layer: 0
-  m_Name: City (1)
+  m_Name: Xi'an
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -635,7 +635,7 @@ GameObject:
   - component: {fileID: 323749969}
   - component: {fileID: 323749970}
   m_Layer: 0
-  m_Name: City (4)
+  m_Name: Guangzhou
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -733,7 +733,7 @@ GameObject:
   - component: {fileID: 363520750}
   - component: {fileID: 363520751}
   m_Layer: 0
-  m_Name: City
+  m_Name: Wuhan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1018,7 +1018,7 @@ GameObject:
   - component: {fileID: 526393199}
   - component: {fileID: 526393202}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Wuhan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1304,7 +1304,7 @@ GameObject:
   - component: {fileID: 719423099}
   - component: {fileID: 719423102}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: Beijing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1607,7 +1607,7 @@ GameObject:
   - component: {fileID: 927454003}
   - component: {fileID: 927454006}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Xi'an
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2028,7 +2028,7 @@ GameObject:
   - component: {fileID: 1377299918}
   - component: {fileID: 1377299919}
   m_Layer: 0
-  m_Name: City (2)
+  m_Name: Chongqing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2276,7 +2276,7 @@ GameObject:
   - component: {fileID: 1578635629}
   - component: {fileID: 1578635630}
   m_Layer: 0
-  m_Name: City (3)
+  m_Name: Beijing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2598,7 +2598,7 @@ GameObject:
   - component: {fileID: 1768053584}
   - component: {fileID: 1768053587}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Chongqing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
