@@ -7,12 +7,12 @@ public class LevelControl : MonoBehaviour
     public void OnLevelSuccess()
     {
         SceneManager.LoadScene("WorldMap");
-        SceneManager.sceneLoaded += (_, __) => GameStatus.OnLevelSuccess.Invoke();
+        SceneManager.sceneLoaded += GameStatus.InvokeSuccess;
     }
 
     public void OnLevelFail()
     {
         SceneManager.LoadScene("WorldMap");
-        SceneManager.sceneLoaded += (_, __) => GameStatus.OnLevelFail.Invoke();
+        SceneManager.sceneLoaded += GameStatus.InvokeFail;
     }
 }

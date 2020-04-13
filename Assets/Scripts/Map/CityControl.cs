@@ -25,25 +25,19 @@ public class CityControl : MonoBehaviour
         {
             SceneManager.LoadScene(LevelSceneName);
             GameStatus.LevelStart(LevelRegionName);
-            GameStatus.OnLevelSuccess += () =>
+            GameStatus.OnLevelSuccess = () =>
             {
                 EventWindowControl NewEventWindow = GameObject.Find("Canvas").transform.Find("Event Window").GetComponent<EventWindowControl>();
                 NewEventWindow.AfterStart = new UnityAction(() => NewEventWindow.ShowEvent(OnLevelSuccess));
             };
-            GameStatus.OnLevelFail += () =>
+            GameStatus.OnLevelFail = () =>
             {
                 EventWindowControl NewEventWindow = GameObject.Find("Canvas").transform.Find("Event Window").GetComponent<EventWindowControl>();
                 NewEventWindow.AfterStart = new UnityAction(() => NewEventWindow.ShowEvent(OnLevelFail));
             };
         });
-        OnLevelSuccess.CallBack = new UnityAction(() =>
-        {
-            GameStatus.LevelSuccess();
-        });
-        OnLevelFail.CallBack = new UnityAction(() =>
-        {
-            GameStatus.LevelFail();
-        });
+        OnLevelSuccess.CallBack = new UnityAction(EventActions.LevelSuccess[LevelSceneName]);
+        OnLevelFail.CallBack = new UnityAction(EventActions.LevelFail[LevelSceneName]);
     }
 
     // When selected, focus camera on current city, and show level brief
