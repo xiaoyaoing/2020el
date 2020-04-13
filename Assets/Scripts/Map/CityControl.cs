@@ -11,12 +11,12 @@ public class CityControl : MonoBehaviour
     [SerializeField] private string LevelRegionName;
 
     // Control component of the level brief window
-    private LevelBriefWindowControl BriefControl;
+    private EventWindowControl EventWindow;
 
     void Start()
     {
         CityTr = GetComponent<Transform>();
-        BriefControl = GameObject.Find("Canvas").transform.Find("Level Brief Window").gameObject.GetComponent<LevelBriefWindowControl>();
+        EventWindow = GameObject.Find("Canvas").transform.Find("Event Window").gameObject.GetComponent<EventWindowControl>();
     }
 
     // When selected, focus camera on current city, and show level brief
@@ -28,6 +28,5 @@ public class CityControl : MonoBehaviour
 
         var GameCam = Camera.main.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>();
         GameCam.Follow = CityTr;
-        BriefControl.DisplayLevel(new LevelInformation { SceneName = LevelSceneName, Image = LevelImage, Description = LevelDescription, RegionName = LevelRegionName });
     }
 }
