@@ -2,10 +2,12 @@
 using UnityEngine.Events;
 using UnityEngine.UI;
 
+[System.Serializable]
 public struct EventInformation
 {
     public string Description;
     public Sprite Image;
+    public string ButtonName;
 
     // Callback is invoked when confirm button is clicked
     public UnityAction CallBack;

@@ -6,9 +6,11 @@ public class CityControl : MonoBehaviour
 
     // Information of the corresponding level
     [SerializeField] private string LevelSceneName;
-    [SerializeField] private Sprite LevelImage;
-    [SerializeField] private string LevelDescription;
     [SerializeField] private string LevelRegionName;
+
+    public EventInformation OnSelectCity;
+    public EventInformation OnLevelSuccess;
+    public EventInformation OnLevelFail;
 
     // Control component of the level brief window
     private EventWindowControl EventWindow;
