@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 // This class holds the status of the game that should be shared across scenes
 // and the callback functions the manipulate the status.
@@ -91,5 +92,16 @@ public static class GameStatus
     public static int GetLevelSuccessCount()
     {
         return LevelSuccssCount;
+    }
+
+    public static void InvokeSuccess(Scene _, LoadSceneMode __)
+    {
+        OnLevelSuccess.Invoke();
+        SceneManager.sceneLoaded -= InvokeSuccess;
+    }
+    public static void InvokeFail(Scene _, LoadSceneMode __)
+    {
+        OnLevelFail.Invoke();
+        SceneManager.sceneLoaded -= InvokeFail;
     }
 }

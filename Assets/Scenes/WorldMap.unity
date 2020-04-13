@@ -121,83 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &48294524
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 48294525}
-  - component: {fileID: 48294527}
-  - component: {fileID: 48294526}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &48294525
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 48294524}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1162180730}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 115.7, y: 16.2}
-  m_SizeDelta: {x: 371.5, y: 235.6}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &48294526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 48294524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Description
---- !u!222 &48294527
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 48294524}
-  m_CullTransparentMesh: 0
 --- !u!1 &88940834
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,135 +198,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88940834}
   m_CullTransparentMesh: 0
---- !u!1 &103058748
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 103058749}
-  - component: {fileID: 103058753}
-  - component: {fileID: 103058752}
-  - component: {fileID: 103058751}
-  m_Layer: 5
-  m_Name: Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &103058749
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103058748}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 790090579}
-  m_Father: {fileID: 1162180730}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 115.7, y: -122.79999}
-  m_SizeDelta: {x: 371.5, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &103058751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103058748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 103058752}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: StartLevel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &103058752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103058748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &103058753
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103058748}
-  m_CullTransparentMesh: 0
 --- !u!1 &171045795
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,7 +212,7 @@ GameObject:
   - component: {fileID: 171045797}
   - component: {fileID: 171045800}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: Guangzhou
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -743,7 +537,7 @@ GameObject:
   - component: {fileID: 228567842}
   - component: {fileID: 228567843}
   m_Layer: 0
-  m_Name: City (1)
+  m_Name: Xi'an
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -825,10 +619,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a25832c5f241571408aaeb63da85d9ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelSceneName: Sample
-  LevelImage: {fileID: 0}
-  LevelDescription: 123
+  LevelSceneName: Xi'an
   LevelRegionName: NW
+  OnSelectCity:
+    Description: "\u897F\u5B89\u4F5C\u4E3A\u53E4\u90FD\u4E4B\u4E00\uFF0C\u4E00\u6708\u5E95\uFF0C\u4E5F\u901A\u62A5\u4E86\u5F53\u5730\u75C5\u4F8B\uFF0C\u4F5C\u4E3A\u9655\u897F\u7701\u7701\u4F1A\uFF0C\u5357\u4EAC\u6709\u6761\u4E0D\u7D0A\u8FDB\u884C\u6297\u75AB\u5DE5\u4F5C\uFF0C\u6536\u6CBB\u75C5\u4F8B\uFF0C\u9650\u5236\u4EBA\u5458\u51FA\u5165\uFF0C\u6392\u67E5\u4EBA\u5458\u611F\u67D3\u60C5\u51B5\u3002\u5C24\u5176\u662F\uFF0C\u7531\u4E8E\u5F53\u5730\u533B\u7597\u6761\u4EF6\u51FA\u4F17\uFF0C\u62E5\u6709\u897F\u6C49\u4EA4\u901A\u5927\u5B66\u7B2C\u4E00\u9644\u5C5E\u533B\u9662\uFF0C\u75C5\u6BD2\u5728\u8FD9\u91CC\u4F1A\u9047\u5230\u5927\u91CF\u6297\u4F53\u7684\u963B\u51FB\u3002"
+    Image: {fileID: 0}
+    ButtonName: "\u5F00\u59CB"
+  OnLevelSuccess:
+    Description: "\u4F3C\u4E4E\u6297\u4F53\u4E5F\u65E0\u6CD5\u963B\u6321\u75C5\u6BD2\u4FB5\u88AD\u7684\u811A\u6B65\uFF0C\u770B\u6765\u8FD9\u79CD\u75C5\u6BD2\u975E\u540C\u5C0F\u53EF\uFF0C\u77ED\u6682\u7684\u4F11\u6574\u540E\uFF0C\u7EE7\u7EED\u5427\u3002"
+    Image: {fileID: 0}
+    ButtonName: "\u786E\u5B9A"
+  OnLevelFail:
+    Description: "\u770B\u6765\u6297\u4F53\u5BF9\u75C5\u6BD2\u7684\u6291\u5236\u4F5C\u7528\u4E0D\u53EF\u5FFD\u7565\uFF0C\u518D\u5C1D\u8BD5\u4E00\u6B21\u5427\uFF1F"
+    Image: {fileID: 0}
+    ButtonName: "\u786E\u5B9A"
 --- !u!1 &323749967
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,7 +645,7 @@ GameObject:
   - component: {fileID: 323749969}
   - component: {fileID: 323749970}
   m_Layer: 0
-  m_Name: City (4)
+  m_Name: Guangzhou
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -923,10 +727,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a25832c5f241571408aaeb63da85d9ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelSceneName: Nanjing
-  LevelImage: {fileID: 0}
-  LevelDescription: 123
+  LevelSceneName: Guangzhou
   LevelRegionName: SE
+  OnSelectCity:
+    Description: "\u6CA1\u60F3\u5230\uFF0C\u8FD9\u6B21\u662F\u75C5\u6BD2\u5360\u4E86\u4E0A\u98CE\uFF0C\u65B0\u7684\u7814\u7A76\u8868\u660E\uFF0C\u75C5\u6BD2\u53EF\u4EE5\u901A\u8FC7\u6CEA\u9053\u548C\u6D88\u5316\u9053\u8FDB\u884C\u4F20\u64AD\uFF0C\u56E0\u6B64\u5728\u8FD9\u91CC\uFF0C\u75C5\u6BD2\u83B7\u5F97\u4E86\u65B0\u7684\u6280\u80FD\uFF0C\u7136\u800C\u5E7F\u4E1C\u4E5F\u4E0D\u662F\u597D\u60F9\u7684\u57CE\u5E02\uFF0C\u5728\u75AB\u60C5\u51FA\u73B0\u540E\uFF0C\u5E7F\u4E1C\u8FC5\u901F\u91C7\u53D6\u63AA\u65BD\uFF0C\u5C01\u9501\uFF0C\u7BA1\u5236\uFF0C\u68C0\u6D4B\uFF0C\u6551\u6CBB\uFF0C\u4E00\u7CFB\u5217\u53CD\u5E94\u8FC5\u901F\uFF0C\u5C3D\u529B\u4E0D\u7ED9\u75C5\u6BD2\u4EE5\u53EF\u8D81\u4E4B\u673A\u3002\u5728\u8FD9\u91CC\u5C31\u770B\u5168\u65B0\u75C5\u6BD2\u80FD\u5426\u5927\u663E\u8EAB\u624B\u4E86\u3002 "
+    Image: {fileID: 0}
+    ButtonName: "\u5F00\u59CB"
+  OnLevelSuccess:
+    Description: " \u75C5\u6BD2\u679C\u7136\u5927\u5E45\u589E\u5F3A\u4E86\u611F\u67D3\u80FD\u529B\uFF0C\u5373\u4F7F\u662F\u770B\u4F3C\u575A\u4E0D\u53EF\u6467\u7684\u57CE\u5E02\u4E5F\u63A5\u8FD1\u6CA6\u9677\u3002"
+    Image: {fileID: 0}
+    ButtonName: "\u786E\u5B9A"
+  OnLevelFail:
+    Description: " \u75C5\u6BD2\u679C\u7136\u5927\u5E45\u589E\u5F3A\u4E86\u611F\u67D3\u80FD\u529B\uFF0C\u5373\u4F7F\u662F\u770B\u4F3C\u575A\u4E0D\u53EF\u6467\u7684\u57CE\u5E02\u4E5F\u63A5\u8FD1\u6CA6\u9677\u3002 "
+    Image: {fileID: 0}
+    ButtonName: "\u786E\u5B9A"
 --- !u!1 &363520748
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,7 +753,7 @@ GameObject:
   - component: {fileID: 363520750}
   - component: {fileID: 363520751}
   m_Layer: 0
-  m_Name: City
+  m_Name: Wuhan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1022,9 +836,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelSceneName: Sample
-  LevelImage: {fileID: 0}
-  LevelDescription: 123
   LevelRegionName: C
+  OnSelectCity:
+    Description: "19 \u5E74 12 \u6708\uFF0C\u6B66\u6C49\u7A81\u7136\u53D1\u73B0\u4E0D\u660E\u539F\u56E0\u7684\u80BA\u708E\u75C5\u4EBA\uFF0C\u800C\u540E\u5747\u88AB\u8BCA\u65AD\u4E3A\u80BA\u708E\u611F\u67D3\uFF0C\u800C\u51FA\u4EBA\u610F\u6599\u7684\u662F\uFF0C\u75C5\u6BD2\u5728
+      20 \u5E74 1 \u6708\u4EFD\u8FCE\u6765\u5927\u7206\u53D1\uFF0C\u4EBA\u6570\u9661\u7136\u589E\u52A0\uFF0C\u75C5\u60C5\u7684\u52A0\u91CD\uFF0C\u6709\u4E9B\u731D\u4E0D\u53CA\u9632\uFF0C\u7136\u9E45\u4E2D\u56FD\u53CD\u5E94\u4E5F\u5341\u5206\u8FC5\u901F\uFF0C\u6210\u7ACB\u4E13\u5BB6\u7EC4\uFF0C\u5C01\u9501\u57CE\u5E02\uFF0C\u9650\u5236\u4EBA\u5458\u6D41\u52A8\uFF0C\u5171\u540C\u5BFB\u627E\u89E3\u51B3\u65B9\u6848\u3002
+      \u73B0\u5728\uFF0C\u8BA9\u65F6\u95F4\u5012\u56DE\u6700\u521D\uFF1A\u4E0D\u77E5\u4E0D\u89C9\uFF0C\u75C5\u6BD2\u6765\u5230\u6B66\u6C49\uFF0C\u7531\u4E8E\u521A\u521A\u6D6E\u73B0\u4EBA\u4E16\uFF0C\u9C9C\u4E3A\u4EBA\u77E5\uFF0C\u611F\u67D3\u4F3C\u4E4E\u5E76\u4E0D\u4E00\u4EF6\u5F88\u56F0\u96BE\u7684\u4E8B\u60C5\uFF0C\u90A3\u5C31\u5728\u8FD9\u91CC\u5C0F\u8BD5\u725B\u5200\u5427\u3002"
+    Image: {fileID: 0}
+    ButtonName: "\u5F00\u59CB"
+  OnLevelSuccess:
+    Description: "\u606D\u559C\uFF01\u611F\u67D3\u987A\u5229\uFF01\u5B9E\u9645\u4E0A\uFF0C\u6B66\u6C49\u5728\u6700\u521D\u7531\u4E8E\u4E00\u4E9B\u758F\u5FFD\u548C\u5927\u610F\uFF0C\u6CA1\u6709\u53CA\u65F6\u9694\u79BB\uFF0C\u5BFC\u81F4\u5927\u9762\u79EF\u7684\u4EBA\u4F20\u4EBA\u73B0\u8C61\u53D1\u751F\uFF0C\u56E0\u6B64\u611F\u67D3\u4EBA\u6570\u4E5F\u6025\u5267\u589E\u52A0\uFF0C\u5728\u4E00\u6708\u5E95\u6570\u5B57\u5DF2\u7ECF\u8DB3\u591F\u5E9E\u5927\u4E86\u3002\u4F46\u662F\u4E0D\u8981\u5F97\u610F\u592A\u65E9\uFF0C\u968F\u7740\u4EBA\u7C7B\u9632\u8303\u610F\u8BC6\u7684\u589E\u5F3A\uFF0C\u75C5\u6BD2\u7684\u611F\u67D3\u5C06\u4F1A\u9047\u5230\u8BF8\u591A\u56F0\u5883\uFF0C\u7EE7\u7EED\u5411\u524D\u5427\uFF01
+      \u53E6\u5916\uFF0C\u6B66\u6C49\u611F\u67D3\u540E\uFF0C\u5468\u56F4\u7684\u57CE\u5E02\u5FFD\u7136\u7684\u90FD\u53D8\u7684\u5371\u9669\u4E86\uFF0C\u56E0\u4E3A\u4ED6\u4EEC\u548C\u6B66\u6C49\u76F8\u8DDD\u751A\u8FD1\uFF0C\u75C5\u6BD2\u53EF\u4EE5\u8F7B\u800C\u6613\u4E3E\u7684\u4F20\u64AD\u5F00\u6765\uFF0C\u90A3\u4E48\u73B0\u5728\u5C31\u9009\u62E9\u4E0B\u4E00\u4E2A\u57CE\u5E02\u6765\u7EE7\u7EED\u5427\uFF01 "
+    Image: {fileID: 0}
+    ButtonName: "\u786E\u5B9A"
+  OnLevelFail:
+    Description: "\u75C5\u6BD2\u7531\u4E8E\u4E0D\u591F\u5F3A\u5927\uFF0C\u611F\u67D3\u5931\u8D25\u3002\u518D\u8BD5\u4E00\u6B21\u5427\u3002"
+    Image: {fileID: 0}
+    ButtonName: "\u786E\u5B9A"
 --- !u!1 &504440160
 GameObject:
   m_ObjectHideFlags: 0
@@ -1224,7 +1051,7 @@ GameObject:
   - component: {fileID: 526393199}
   - component: {fileID: 526393202}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Wuhan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1510,7 +1337,7 @@ GameObject:
   - component: {fileID: 719423099}
   - component: {fileID: 719423102}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: Beijing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1628,83 +1455,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   City: {fileID: 1578635627}
---- !u!1 &790090578
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 790090579}
-  - component: {fileID: 790090581}
-  - component: {fileID: 790090580}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &790090579
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 790090578}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 103058749}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &790090580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 790090578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Start
---- !u!222 &790090581
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 790090578}
-  m_CullTransparentMesh: 0
 --- !u!1 &823568637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,79 +1549,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa4a3ef9bd91f8499bcb13cb99e8b13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &852305276
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 852305277}
-  - component: {fileID: 852305279}
-  - component: {fileID: 852305278}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &852305277
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 852305276}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1162180730}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -203.5, y: -1.9}
-  m_SizeDelta: {x: 205, y: 271.8}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &852305278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 852305276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &852305279
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 852305276}
-  m_CullTransparentMesh: 0
 --- !u!1 &899623786
 GameObject:
   m_ObjectHideFlags: 0
@@ -1963,7 +1640,7 @@ GameObject:
   - component: {fileID: 927454003}
   - component: {fileID: 927454006}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Xi'an
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2111,7 +1788,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1087580210}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2256,7 +1933,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1615123956}
-  - {fileID: 1162180730}
   - {fileID: 2018580634}
   - {fileID: 1014898204}
   m_Father: {fileID: 0}
@@ -2373,95 +2049,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa4a3ef9bd91f8499bcb13cb99e8b13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1162180729
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1162180730}
-  - component: {fileID: 1162180733}
-  - component: {fileID: 1162180732}
-  - component: {fileID: 1162180731}
-  m_Layer: 5
-  m_Name: Level Brief Window
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1162180730
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1162180729}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 852305277}
-  - {fileID: 48294525}
-  - {fileID: 103058749}
-  m_Father: {fileID: 1087580210}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -44.6}
-  m_SizeDelta: {x: 667, y: 319.8}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1162180731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1162180729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9fa19d92d40f9c4989100e4c50bed71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1162180732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1162180729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1162180733
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1162180729}
-  m_CullTransparentMesh: 0
 --- !u!1 &1377299916
 GameObject:
   m_ObjectHideFlags: 0
@@ -2474,7 +2061,7 @@ GameObject:
   - component: {fileID: 1377299918}
   - component: {fileID: 1377299919}
   m_Layer: 0
-  m_Name: City (2)
+  m_Name: Chongqing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2557,9 +2144,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelSceneName: Chongqing
-  LevelImage: {fileID: 0}
-  LevelDescription: 123
   LevelRegionName: SW
+  OnSelectCity:
+    Description: "\u91CD\u5E86\u4F5C\u4E3A\u897F\u90E8\u7684\u4EE3\u8868\uFF0C\u9AD8\u5EA6\u53D1\u8FBE\uFF0C\u5C24\u5176\u5BF9\u75C5\u6BD2\u53CD\u5E94\u8FC5\u901F\uFF0C\u5728\u4E00\u6708\u5E95\uFF0C\u91CD\u5E86\u542F\u52A8
+      \u4E00\u7EA7\u76F8\u5E94\uFF0C\u5BF9\u75C5\u6BD2\u8FDB\u884C\u5B9E\u65F6\u68C0\u6D4B\uFF0C\u91CD\u70B9\u6392\u67E5\uFF0C\u540C\u65F6\u9650\u5236\u51FA\u5165\uFF0C\u5168\u529B\u5F00\u5C55\u6551\u6CBB\u5DE5\u4F5C\u3002\u56E0\u6B64\u4EBA\u4EEC\u7684\u9632\u8303\u610F\u8BC6\u5F88\u9AD8\uFF0C\u51FA\u95E8\u53E3\u7F69\u662F\u5FC5\u5907\u4E4B\u7269\uFF0C\u6709\u4E86\u53E3\u7F69\uFF0C\u75C5\u6BD2\u5C06\u4F1A\u4E22\u5931\u5F88\u591A\u7684\u4F20\u64AD\u673A\u4F1A\u3002\u663E\u7136\uFF0C\u8FD9\u662F\u4E2A\u5927\u9EBB\u70E6\u3002"
+    Image: {fileID: 0}
+    ButtonName: "\u5F00\u59CB"
+  OnLevelSuccess:
+    Description: "\u606D\u559C\uFF01\u518D\u8FC8\u8FDB\u4E00\u6B65\uFF0C\u770B\u6765\u53E3\u7F69\u4E5F\u4E0D\u662F\u4E07\u80FD\u7684\uFF0C\u6240\u8C13\u9053\u9AD8\u4E00\u5C3A\uFF0C\u9B54\u9AD8\u4E00\u4E08\uFF0C\u7EE7\u7EED\u52A0\u6CB9\u5427\u3002"
+    Image: {fileID: 0}
+    ButtonName: "\u786E\u5B9A"
+  OnLevelFail:
+    Description: "\u606D\u559C\uFF01\u518D\u8FC8\u8FDB\u4E00\u6B65\uFF0C\u770B\u6765\u53E3\u7F69\u4E5F\u4E0D\u662F\u4E07\u80FD\u7684\uFF0C\u6240\u8C13\u9053\u9AD8\u4E00\u5C3A\uFF0C\u9B54\u9AD8\u4E00\u4E08\uFF0C\u7EE7\u7EED\u52A0\u6CB9\u5427\u3002"
+    Image: {fileID: 0}
+    ButtonName: "\u786E\u5B9A"
 --- !u!1 &1467693013
 GameObject:
   m_ObjectHideFlags: 0
@@ -2722,7 +2320,7 @@ GameObject:
   - component: {fileID: 1578635629}
   - component: {fileID: 1578635630}
   m_Layer: 0
-  m_Name: City (3)
+  m_Name: Beijing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2804,10 +2402,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a25832c5f241571408aaeb63da85d9ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelSceneName: Sample
-  LevelImage: {fileID: 0}
-  LevelDescription: 123
+  LevelSceneName: Beijing
   LevelRegionName: NE
+  OnSelectCity:
+    Description: 
+    Image: {fileID: 0}
+    ButtonName: "\u5F00\u59CB"
+  OnLevelSuccess:
+    Description: 
+    Image: {fileID: 0}
+    ButtonName: "\u786E\u5B9A"
+  OnLevelFail:
+    Description: 
+    Image: {fileID: 0}
+    ButtonName: "\u786E\u5B9A"
 --- !u!1 &1615123955
 GameObject:
   m_ObjectHideFlags: 0
@@ -3044,7 +2652,7 @@ GameObject:
   - component: {fileID: 1768053584}
   - component: {fileID: 1768053587}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Chongqing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3665,7 +3273,7 @@ RectTransform:
   - {fileID: 1776783598}
   - {fileID: 1816182272}
   m_Father: {fileID: 1087580210}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3684,6 +3292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04fe39e234ebb504ea7b0b2980ce462c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EventImage: {fileID: 0}
 --- !u!114 &2018580636
 MonoBehaviour:
   m_ObjectHideFlags: 0
