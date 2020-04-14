@@ -31,11 +31,11 @@ public static class GameStatus
         };
         RegionEnableStatus = new Dictionary<string, bool>
         {
-            ["SE"] = false,
-            ["NE"] = false,
+            ["SE"] = true,
+            ["NE"] = true,
             ["C"] = true,
-            ["NW"] = false,
-            ["SW"] = false
+            ["NW"] = true,
+            ["SW"] = true
         };
         LevelTriedCount = LevelTriedCount = 0;
     }
@@ -91,5 +91,10 @@ public static class GameStatus
     public static int GetLevelSuccessCount()
     {
         return LevelSuccssCount;
+    }
+
+    public static string GetLastInfectedRegion()//
+    {
+        return LastInfectedRegion;
     }
 }

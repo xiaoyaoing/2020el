@@ -14,7 +14,9 @@ public class playermove : MonoBehaviour
     public Collider2D coll;
     public double health=100;
     public Text healthnumber;
-    
+
+    public Image healthBar;//
+
     void Start()
     {   
         health=100;
@@ -34,7 +36,8 @@ public class playermove : MonoBehaviour
         rb.velocity=new Vector2(10,y_speed*label);
         transform.localScale=new Vector3(1,-label,1);
         healthnumber.text = health.ToString();
-        
+
+        healthBar.fillAmount = (float)(100-health)/100;//
     }
      private void OnTriggerEnter2D(Collider2D other)
     {
