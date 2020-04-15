@@ -1,15 +1,18 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // Helper class to invoke callback function
 public class LevelControl : MonoBehaviour
 {
     public void OnLevelSuccess()
     {
-        GameStatus.OnLevelSuccess.Invoke();
+        SceneManager.LoadScene("WorldMap");
+        SceneManager.sceneLoaded += GameStatus.InvokeSuccess;
     }
 
     public void OnLevelFail()
     {
-        GameStatus.OnLevelFail.Invoke();
+        SceneManager.LoadScene("WorldMap");
+        SceneManager.sceneLoaded += GameStatus.InvokeFail;
     }
 }
