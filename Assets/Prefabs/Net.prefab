@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8000923779700050756}
   - component: {fileID: 8000923779700050755}
   - component: {fileID: 8000923779700050754}
-  - component: {fileID: 8000923779700050753}
+  - component: {fileID: 6549065693747883021}
   m_Layer: 0
   m_Name: Net
   m_TagString: Untagged
@@ -95,8 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45ca173aa1215124d8b30f7ae3169118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!68 &8000923779700050753
-EdgeCollider2D:
+--- !u!60 &6549065693747883021
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -109,9 +109,18 @@ EdgeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.125, y: 7.875}
+    newSize: {x: 18.9, y: 14.17}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   m_Points:
-  - {x: 1.623672, y: 3.314533}
-  - {x: -1.5970407, y: -3.4020898}
-  - {x: 1.2467132, y: -3.4038734}
-  - {x: -1.8042169, y: 3.3108814}
+    m_Paths:
+    - - {x: -1.1025, y: -3.7575}
+      - {x: -3.3025, y: 1.9425}
+      - {x: 1.6725, y: 3.3325}
+      - {x: 2.8925, y: -3.5625}
