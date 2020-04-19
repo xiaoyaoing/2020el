@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Xi'an.unity
     guid: b726fce977c28624f91f9a48f3510856
+  - enabled: 1
+    path: Assets/Scenes/Wuhan.unity
+    guid: a681785d4c1eae54bb8e95505f2b55b3
   m_configObjects: {}
