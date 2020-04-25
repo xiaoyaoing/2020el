@@ -79,13 +79,7 @@ public class PlayerMoveControl : MonoBehaviour
          num_of_normal_cell-=2;
         t1=time;
         }
-        if(Input.GetKey(KeyCode.S) && num_of_normal_cell>=1 && time-t2>=30){
-            MaxHorizontalSpeed=(float)20;
-            num_of_normal_cell-=1;
-            t2=time;
-        }
-        if(time-t2==30)
-        MaxHorizontalSpeed=(float)10;
+       
     }
 
     public void InfectCell(Transform pos)
