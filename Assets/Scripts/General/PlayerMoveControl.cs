@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerMoveControl : MonoBehaviour
 {
@@ -17,7 +18,6 @@ public class PlayerMoveControl : MonoBehaviour
     private bool IsInfecting;
     private Transform InfectCellPos;
 
-
     void Start()
     {
         JumpBox = GetComponent<BoxCollider2D>();
@@ -26,8 +26,7 @@ public class PlayerMoveControl : MonoBehaviour
     }
 
     void Update()
-    {   
-        
+    {
         Move();
     }
     void Move()
@@ -54,13 +53,6 @@ public class PlayerMoveControl : MonoBehaviour
             PlayerRb.velocity = new Vector2(MaxHorizontalSpeed * PlayerRb.velocity.x / Mathf.Abs(PlayerRb.velocity.x), PlayerRb.velocity.y);
         if (Mathf.Abs(PlayerRb.velocity.y) > MaxVerticalSpeed)
             PlayerRb.velocity = new Vector2(PlayerRb.velocity.x, MaxVerticalSpeed * PlayerRb.velocity.y / Mathf.Abs(PlayerRb.velocity.y));
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "white cell")
-            Destroy(gameObject);
-
     }
 
     public void InfectCell(Transform pos)
