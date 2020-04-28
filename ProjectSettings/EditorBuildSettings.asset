@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Sample.unity
+    guid: 648365c5a8deb31439c638e6bd58291a
+  - enabled: 1
     path: Assets/Scenes/WorldMap.unity
     guid: 2fd115e733eb2df4fbca30a0a64304d2
   - enabled: 1
@@ -14,10 +17,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Xi'an.unity
     guid: b726fce977c28624f91f9a48f3510856
-  - enabled: 1
-    path: Assets/Scenes/Wuhan.unity
-    guid: a681785d4c1eae54bb8e95505f2b55b3
-  - enabled: 1
-    path: Assets/Scenes/Guangzhou.unity
-    guid: d1df4fb9caf500b4690ffe43bee38ae7
   m_configObjects: {}

@@ -10,15 +10,14 @@ public class WhitecellControl : MonoBehaviour
 
     private bool Stopped;
     private float MaxSpeed;
-
-    private LevelControl Level;
+    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        whitecell = transform;
         GameObject player = GameObject.Find("Player");
         PlayerTr = GameObject.Find("Player").transform;
         MaxSpeed = player.GetComponent<PlayerMoveControl>().GetMaxHorizontalSpeed();
-        Level = GameObject.Find("LevelControl").GetComponent<LevelControl>();
     }
 
     // Update is called once per frame
@@ -29,7 +28,7 @@ public class WhitecellControl : MonoBehaviour
             rb.velocity = new Vector2(0, 0);
             return;
         }
-        if (transform.position.x > PlayerTr.position.x - 20)
+        if (whitecell.position.x > PlayerTr.position.x - 20)
             rb.velocity = new Vector2(MaxSpeed / 2, 0);
         else
             rb.velocity = new Vector2(MaxSpeed, 0);
@@ -38,11 +37,5 @@ public class WhitecellControl : MonoBehaviour
     public void Stop()
     {
         Stopped = true;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-            Level.OnLevelFail();
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8000923779700050756}
   - component: {fileID: 8000923779700050755}
   - component: {fileID: 8000923779700050754}
-  - component: {fileID: 282841761995979067}
+  - component: {fileID: 8000923779700050753}
   m_Layer: 0
   m_Name: Net
   m_TagString: Untagged
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45ca173aa1215124d8b30f7ae3169118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!68 &282841761995979067
+--- !u!68 &8000923779700050753
 EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,23 +105,13 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -3.2368221, y: 1.8846922}
-  - {x: -2.2812686, y: 1.5931411}
-  - {x: -1.4879637, y: 0.23539066}
-  - {x: -1.893939, y: -1.598597}
-  - {x: -1.7659597, y: -1.0123811}
-  - {x: -2.2337608, y: -0.8723273}
-  - {x: -0.6716342, y: -1.1586995}
-  - {x: -0.30509472, y: -1.8674102}
-  - {x: -1.0217161, y: -3.6738114}
-  - {x: -0.32395887, y: -1.734941}
-  - {x: 0.44562864, y: -3.2432885}
-  - {x: 2.6262717, y: -3.0746617}
-  - {x: 1.5171351, y: 2.954842}
-  - {x: -2.4142976, y: 1.835166}
+  - {x: 1.623672, y: 3.314533}
+  - {x: -1.5970407, y: -3.4020898}
+  - {x: 1.2467132, y: -3.4038734}
+  - {x: -1.8042169, y: 3.3108814}

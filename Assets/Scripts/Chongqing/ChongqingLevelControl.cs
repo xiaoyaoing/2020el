@@ -22,19 +22,11 @@ public class ChongqingLevelControl : LevelControl
     private bool BlowPaused = true;
     private bool BlowOnce;
 
-    private Rigidbody2D[] PMRbs;
-
-    private AudioSource AudioPlayer;
     void Start()
     {
         Player = GameObject.Find("Player").GetComponentInChildren<PlayerTrapControl>();
         PlayerRb = GameObject.Find("Player").GetComponentInChildren<Rigidbody2D>();
         QTEPanel = GameObject.Find("Canvas").transform.Find("QTE Hint").gameObject;
-        AudioPlayer = GetComponent<AudioSource>();
-        Transform PMs = GameObject.Find("PMs").transform;
-        PMRbs = new Rigidbody2D[PMs.childCount];
-        for (int i = 0; i < PMs.childCount; ++i)
-            PMRbs[i] = PMs.GetChild(i).GetComponent<Rigidbody2D>();
     }
     void Update()
     {
@@ -79,13 +71,7 @@ public class ChongqingLevelControl : LevelControl
     private void Breathe()
     {
         if (Time.time - LastBlowTime <= 0.8f)
-        {
-            if (!AudioPlayer.isPlaying)
-                AudioPlayer.Play();
             PlayerRb.AddForce(new Vector2(-10, 0));
-            for (int i = 0; i < PMRbs.Length; ++i)
-                PMRbs[i].AddForce(new Vector2(-20, 0));
-        }
         if (Time.time - LastBlowTime >= BlowInterval)
         {
             LastBlowTime = Time.time;
