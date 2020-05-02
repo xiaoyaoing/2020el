@@ -12112,6 +12112,75 @@ CircleCollider2D:
   m_Offset: {x: -0.012912273, y: 0}
   serializedVersion: 2
   m_Radius: 0.20302105
+--- !u!1001 &1048663671
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5717577598257160930, guid: de7fe5ffd592fbf448581b588f5e1ac5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5717577598257160930, guid: de7fe5ffd592fbf448581b588f5e1ac5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5717577598257160930, guid: de7fe5ffd592fbf448581b588f5e1ac5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5717577598257160930, guid: de7fe5ffd592fbf448581b588f5e1ac5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5717577598257160930, guid: de7fe5ffd592fbf448581b588f5e1ac5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5717577598257160930, guid: de7fe5ffd592fbf448581b588f5e1ac5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5717577598257160930, guid: de7fe5ffd592fbf448581b588f5e1ac5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5717577598257160930, guid: de7fe5ffd592fbf448581b588f5e1ac5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5717577598257160930, guid: de7fe5ffd592fbf448581b588f5e1ac5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5717577598257160930, guid: de7fe5ffd592fbf448581b588f5e1ac5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5717577598257160930, guid: de7fe5ffd592fbf448581b588f5e1ac5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5717577598257160940, guid: de7fe5ffd592fbf448581b588f5e1ac5,
+        type: 3}
+      propertyPath: m_Name
+      value: BGMPlayer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de7fe5ffd592fbf448581b588f5e1ac5, type: 3}
 --- !u!1 &1077692672
 GameObject:
   m_ObjectHideFlags: 0
