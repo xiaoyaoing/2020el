@@ -51,4 +51,9 @@ public class CityControl : MonoBehaviour
         GameCam.Follow = CityTr;
         EventWindow.ShowEvent(OnSelectCity);
     }
+
+    public string GetRegionName()
+    {
+        return LevelRegionName;
+    }
 }
