@@ -20,6 +20,7 @@ public class ProteaseControl : MonoBehaviour
         float DeltaY = Vertexes[TargetIndex].y - transform.position.y;
         float Distance = Mathf.Sqrt(DeltaX * DeltaX + DeltaY * DeltaY);
         ProteaseRb.velocity = new Vector2(Speed * DeltaX / Distance, Speed * DeltaY / Distance);
+        transform.eulerAngles = new Vector3(0, 0, Mathf.Rad2Deg * Mathf.Atan2(DeltaY, DeltaX));
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
