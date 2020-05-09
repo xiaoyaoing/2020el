@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 [System.Serializable]
 public struct EventInformation
@@ -8,6 +9,7 @@ public struct EventInformation
     public string Description;
     public Sprite Image;
     public string ButtonName;
+    public AudioClip Audio;
 
     // Callback is invoked when confirm button is clicked
     public UnityAction CallBack;
@@ -19,6 +21,7 @@ public class EventWindowControl : MonoBehaviour
     [SerializeField] private Image EventImage;
     private Button ConfirmButton;
     private CanvasControl Canvas;
+    private AudioSource AudioPlayer;
 
     public UnityAction AfterStart;
 
@@ -30,6 +33,7 @@ public class EventWindowControl : MonoBehaviour
         ConfirmButton = GetComponentInChildren<Button>();
         Canvas = GetComponentInParent<CanvasControl>();
         gameObject.SetActive(false);
+        AudioPlayer = GetComponent<AudioSource>();
         if (AfterStart != null)
             AfterStart.Invoke();
     }
@@ -43,6 +47,9 @@ public class EventWindowControl : MonoBehaviour
             ConfirmButton.onClick.AddListener(Info.CallBack);
         ConfirmButton.onClick.AddListener(EventWindowCleanup);
         gameObject.SetActive(true);
+        AudioPlayer.clip = Info.Audio;
+        if (Info.Audio)
+            AudioPlayer.Play();
         Canvas.DisableOtherWindows(gameObject);
     }
 

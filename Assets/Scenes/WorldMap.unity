@@ -625,14 +625,17 @@ MonoBehaviour:
     Description: "\u897F\u5B89\u4F5C\u4E3A\u53E4\u90FD\u4E4B\u4E00\uFF0C\u4E00\u6708\u5E95\uFF0C\u4E5F\u901A\u62A5\u4E86\u5F53\u5730\u75C5\u4F8B\uFF0C\u4F5C\u4E3A\u9655\u897F\u7701\u7701\u4F1A\uFF0C\u5357\u4EAC\u6709\u6761\u4E0D\u7D0A\u8FDB\u884C\u6297\u75AB\u5DE5\u4F5C\uFF0C\u6536\u6CBB\u75C5\u4F8B\uFF0C\u9650\u5236\u4EBA\u5458\u51FA\u5165\uFF0C\u6392\u67E5\u4EBA\u5458\u611F\u67D3\u60C5\u51B5\u3002\u5C24\u5176\u662F\uFF0C\u7531\u4E8E\u5F53\u5730\u533B\u7597\u6761\u4EF6\u51FA\u4F17\uFF0C\u62E5\u6709\u897F\u6C49\u4EA4\u901A\u5927\u5B66\u7B2C\u4E00\u9644\u5C5E\u533B\u9662\uFF0C\u75C5\u6BD2\u5728\u8FD9\u91CC\u4F1A\u9047\u5230\u5927\u91CF\u6297\u4F53\u7684\u963B\u51FB\u3002"
     Image: {fileID: 0}
     ButtonName: "\u5F00\u59CB"
+    Audio: {fileID: 8300000, guid: c348052acd9abf54d83d8b3a2155ec0c, type: 3}
   OnLevelSuccess:
     Description: "\u4F3C\u4E4E\u6297\u4F53\u4E5F\u65E0\u6CD5\u963B\u6321\u75C5\u6BD2\u4FB5\u88AD\u7684\u811A\u6B65\uFF0C\u770B\u6765\u8FD9\u79CD\u75C5\u6BD2\u975E\u540C\u5C0F\u53EF\uFF0C\u77ED\u6682\u7684\u4F11\u6574\u540E\uFF0C\u7EE7\u7EED\u5427\u3002"
     Image: {fileID: 0}
     ButtonName: "\u786E\u5B9A"
+    Audio: {fileID: 8300000, guid: 2c8ade24cbaa529499d76d4e79456c4b, type: 3}
   OnLevelFail:
     Description: "\u770B\u6765\u6297\u4F53\u5BF9\u75C5\u6BD2\u7684\u6291\u5236\u4F5C\u7528\u4E0D\u53EF\u5FFD\u7565\uFF0C\u518D\u5C1D\u8BD5\u4E00\u6B21\u5427\uFF1F"
     Image: {fileID: 0}
     ButtonName: "\u786E\u5B9A"
+    Audio: {fileID: 8300000, guid: 1543c4927c8088d45a2b7217a5a1e4ef, type: 3}
 --- !u!1 &323749967
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,14 +736,17 @@ MonoBehaviour:
     Description: "\u6CA1\u60F3\u5230\uFF0C\u8FD9\u6B21\u662F\u75C5\u6BD2\u5360\u4E86\u4E0A\u98CE\uFF0C\u65B0\u7684\u7814\u7A76\u8868\u660E\uFF0C\u75C5\u6BD2\u53EF\u4EE5\u901A\u8FC7\u6CEA\u9053\u548C\u6D88\u5316\u9053\u8FDB\u884C\u4F20\u64AD\uFF0C\u56E0\u6B64\u5728\u8FD9\u91CC\uFF0C\u75C5\u6BD2\u83B7\u5F97\u4E86\u65B0\u7684\u6280\u80FD\uFF0C\u7136\u800C\u5E7F\u4E1C\u4E5F\u4E0D\u662F\u597D\u60F9\u7684\u57CE\u5E02\uFF0C\u5728\u75AB\u60C5\u51FA\u73B0\u540E\uFF0C\u5E7F\u4E1C\u8FC5\u901F\u91C7\u53D6\u63AA\u65BD\uFF0C\u5C01\u9501\uFF0C\u7BA1\u5236\uFF0C\u68C0\u6D4B\uFF0C\u6551\u6CBB\uFF0C\u4E00\u7CFB\u5217\u53CD\u5E94\u8FC5\u901F\uFF0C\u5C3D\u529B\u4E0D\u7ED9\u75C5\u6BD2\u4EE5\u53EF\u8D81\u4E4B\u673A\u3002\u5728\u8FD9\u91CC\u5C31\u770B\u5168\u65B0\u75C5\u6BD2\u80FD\u5426\u5927\u663E\u8EAB\u624B\u4E86\u3002 "
     Image: {fileID: 0}
     ButtonName: "\u5F00\u59CB"
+    Audio: {fileID: 8300000, guid: e3491acfdce837748864f0e5c4d0a049, type: 3}
   OnLevelSuccess:
     Description: " \u75C5\u6BD2\u679C\u7136\u5927\u5E45\u589E\u5F3A\u4E86\u611F\u67D3\u80FD\u529B\uFF0C\u5373\u4F7F\u662F\u770B\u4F3C\u575A\u4E0D\u53EF\u6467\u7684\u57CE\u5E02\u4E5F\u63A5\u8FD1\u6CA6\u9677\u3002"
     Image: {fileID: 0}
     ButtonName: "\u786E\u5B9A"
+    Audio: {fileID: 8300000, guid: 5ffbd1b678144b3479077a452f242baf, type: 3}
   OnLevelFail:
     Description: " \u75C5\u6BD2\u679C\u7136\u5927\u5E45\u589E\u5F3A\u4E86\u611F\u67D3\u80FD\u529B\uFF0C\u5373\u4F7F\u662F\u770B\u4F3C\u575A\u4E0D\u53EF\u6467\u7684\u57CE\u5E02\u4E5F\u63A5\u8FD1\u6CA6\u9677\u3002 "
     Image: {fileID: 0}
     ButtonName: "\u786E\u5B9A"
+    Audio: {fileID: 8300000, guid: 26f439f2963b72f4b93a3a7dbc004b31, type: 3}
 --- !u!1 &363520748
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,15 +849,18 @@ MonoBehaviour:
       \u73B0\u5728\uFF0C\u8BA9\u65F6\u95F4\u5012\u56DE\u6700\u521D\uFF1A\u4E0D\u77E5\u4E0D\u89C9\uFF0C\u75C5\u6BD2\u6765\u5230\u6B66\u6C49\uFF0C\u7531\u4E8E\u521A\u521A\u6D6E\u73B0\u4EBA\u4E16\uFF0C\u9C9C\u4E3A\u4EBA\u77E5\uFF0C\u611F\u67D3\u4F3C\u4E4E\u5E76\u4E0D\u4E00\u4EF6\u5F88\u56F0\u96BE\u7684\u4E8B\u60C5\uFF0C\u90A3\u5C31\u5728\u8FD9\u91CC\u5C0F\u8BD5\u725B\u5200\u5427\u3002"
     Image: {fileID: 0}
     ButtonName: "\u5F00\u59CB"
+    Audio: {fileID: 8300000, guid: 319b666be46e03e4eaefb63a042a909d, type: 3}
   OnLevelSuccess:
     Description: "\u606D\u559C\uFF01\u611F\u67D3\u987A\u5229\uFF01\u5B9E\u9645\u4E0A\uFF0C\u6B66\u6C49\u5728\u6700\u521D\u7531\u4E8E\u4E00\u4E9B\u758F\u5FFD\u548C\u5927\u610F\uFF0C\u6CA1\u6709\u53CA\u65F6\u9694\u79BB\uFF0C\u5BFC\u81F4\u5927\u9762\u79EF\u7684\u4EBA\u4F20\u4EBA\u73B0\u8C61\u53D1\u751F\uFF0C\u56E0\u6B64\u611F\u67D3\u4EBA\u6570\u4E5F\u6025\u5267\u589E\u52A0\uFF0C\u5728\u4E00\u6708\u5E95\u6570\u5B57\u5DF2\u7ECF\u8DB3\u591F\u5E9E\u5927\u4E86\u3002\u4F46\u662F\u4E0D\u8981\u5F97\u610F\u592A\u65E9\uFF0C\u968F\u7740\u4EBA\u7C7B\u9632\u8303\u610F\u8BC6\u7684\u589E\u5F3A\uFF0C\u75C5\u6BD2\u7684\u611F\u67D3\u5C06\u4F1A\u9047\u5230\u8BF8\u591A\u56F0\u5883\uFF0C\u7EE7\u7EED\u5411\u524D\u5427\uFF01
       \u53E6\u5916\uFF0C\u6B66\u6C49\u611F\u67D3\u540E\uFF0C\u5468\u56F4\u7684\u57CE\u5E02\u5FFD\u7136\u7684\u90FD\u53D8\u7684\u5371\u9669\u4E86\uFF0C\u56E0\u4E3A\u4ED6\u4EEC\u548C\u6B66\u6C49\u76F8\u8DDD\u751A\u8FD1\uFF0C\u75C5\u6BD2\u53EF\u4EE5\u8F7B\u800C\u6613\u4E3E\u7684\u4F20\u64AD\u5F00\u6765\uFF0C\u90A3\u4E48\u73B0\u5728\u5C31\u9009\u62E9\u4E0B\u4E00\u4E2A\u57CE\u5E02\u6765\u7EE7\u7EED\u5427\uFF01 "
     Image: {fileID: 0}
     ButtonName: "\u786E\u5B9A"
+    Audio: {fileID: 8300000, guid: 0256092b4d60ee3449292b44d5c1ec27, type: 3}
   OnLevelFail:
     Description: "\u75C5\u6BD2\u7531\u4E8E\u4E0D\u591F\u5F3A\u5927\uFF0C\u611F\u67D3\u5931\u8D25\u3002\u518D\u8BD5\u4E00\u6B21\u5427\u3002"
     Image: {fileID: 0}
     ButtonName: "\u786E\u5B9A"
+    Audio: {fileID: 8300000, guid: b1bb9c0071e19c944b4e857631402fbb, type: 3}
 --- !u!1 &504440160
 GameObject:
   m_ObjectHideFlags: 0
@@ -2150,14 +2159,17 @@ MonoBehaviour:
       \u4E00\u7EA7\u76F8\u5E94\uFF0C\u5BF9\u75C5\u6BD2\u8FDB\u884C\u5B9E\u65F6\u68C0\u6D4B\uFF0C\u91CD\u70B9\u6392\u67E5\uFF0C\u540C\u65F6\u9650\u5236\u51FA\u5165\uFF0C\u5168\u529B\u5F00\u5C55\u6551\u6CBB\u5DE5\u4F5C\u3002\u56E0\u6B64\u4EBA\u4EEC\u7684\u9632\u8303\u610F\u8BC6\u5F88\u9AD8\uFF0C\u51FA\u95E8\u53E3\u7F69\u662F\u5FC5\u5907\u4E4B\u7269\uFF0C\u6709\u4E86\u53E3\u7F69\uFF0C\u75C5\u6BD2\u5C06\u4F1A\u4E22\u5931\u5F88\u591A\u7684\u4F20\u64AD\u673A\u4F1A\u3002\u663E\u7136\uFF0C\u8FD9\u662F\u4E2A\u5927\u9EBB\u70E6\u3002"
     Image: {fileID: 0}
     ButtonName: "\u5F00\u59CB"
+    Audio: {fileID: 8300000, guid: c9d2e3e79575a114e85017da830160a3, type: 3}
   OnLevelSuccess:
     Description: "\u606D\u559C\uFF01\u518D\u8FC8\u8FDB\u4E00\u6B65\uFF0C\u770B\u6765\u53E3\u7F69\u4E5F\u4E0D\u662F\u4E07\u80FD\u7684\uFF0C\u6240\u8C13\u9053\u9AD8\u4E00\u5C3A\uFF0C\u9B54\u9AD8\u4E00\u4E08\uFF0C\u7EE7\u7EED\u52A0\u6CB9\u5427\u3002"
     Image: {fileID: 0}
     ButtonName: "\u786E\u5B9A"
+    Audio: {fileID: 8300000, guid: 8f94a6d7e109c6a4d8b60c9ea828f867, type: 3}
   OnLevelFail:
     Description: "\u606D\u559C\uFF01\u518D\u8FC8\u8FDB\u4E00\u6B65\uFF0C\u770B\u6765\u53E3\u7F69\u4E5F\u4E0D\u662F\u4E07\u80FD\u7684\uFF0C\u6240\u8C13\u9053\u9AD8\u4E00\u5C3A\uFF0C\u9B54\u9AD8\u4E00\u4E08\uFF0C\u7EE7\u7EED\u52A0\u6CB9\u5427\u3002"
     Image: {fileID: 0}
     ButtonName: "\u786E\u5B9A"
+    Audio: {fileID: 8300000, guid: 1b62f7d8f1254c74f8a55ef6d18656e4, type: 3}
 --- !u!1 &1467693013
 GameObject:
   m_ObjectHideFlags: 0
@@ -2408,14 +2420,17 @@ MonoBehaviour:
     Description: 
     Image: {fileID: 0}
     ButtonName: "\u5F00\u59CB"
+    Audio: {fileID: 0}
   OnLevelSuccess:
     Description: 
     Image: {fileID: 0}
     ButtonName: "\u786E\u5B9A"
+    Audio: {fileID: 0}
   OnLevelFail:
     Description: 
     Image: {fileID: 0}
     ButtonName: "\u786E\u5B9A"
+    Audio: {fileID: 0}
 --- !u!1 &1615123955
 GameObject:
   m_ObjectHideFlags: 0
@@ -3251,6 +3266,7 @@ GameObject:
   - component: {fileID: 2018580637}
   - component: {fileID: 2018580636}
   - component: {fileID: 2018580635}
+  - component: {fileID: 2018580638}
   m_Layer: 5
   m_Name: Event Window
   m_TagString: Untagged
@@ -3329,3 +3345,99 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018580633}
   m_CullTransparentMesh: 0
+--- !u!82 &2018580638
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018580633}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
