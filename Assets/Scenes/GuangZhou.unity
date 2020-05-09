@@ -8268,7 +8268,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 181.85815, y: 5.788521}
+  m_Offset: {x: 181.85815, y: -0.69402695}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8279,7 +8279,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 452.8145, y: 43.60688}
+  m_Size: {x: 452.8145, y: 47.142776}
   m_EdgeRadius: 0
 --- !u!4 &838999021
 Transform:
@@ -10519,6 +10519,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 8613031897050222192, guid: c1c3b360b7263e643b3fe03209fc4fb8,
+        type: 3}
+      propertyPath: m_BoundingShape2D
+      value: 
+      objectReference: {fileID: 838999020}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1c3b360b7263e643b3fe03209fc4fb8, type: 3}
 --- !u!1 &1965822058
