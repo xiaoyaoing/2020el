@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/CreditScene.unity
+    guid: da6ed8c41b288184ebb3c85cc1bbb903
+  - enabled: 1
     path: Assets/Scenes/WorldMap.unity
     guid: 2fd115e733eb2df4fbca30a0a64304d2
   - enabled: 1
@@ -20,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Guangzhou.unity
     guid: d1df4fb9caf500b4690ffe43bee38ae7
+  - enabled: 1
+    path: Assets/Scenes/HelloScene.unity
+    guid: e4c8b8a566693534685298c8e54deec9
   m_configObjects: {}
