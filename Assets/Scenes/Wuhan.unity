@@ -1858,6 +1858,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ProteaseSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 6795336705618627790, guid: 89e2f4a485d6c6e45900eb417b7b1a61,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89e2f4a485d6c6e45900eb417b7b1a61, type: 3}
 --- !u!1 &459809993
