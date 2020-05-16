@@ -87,7 +87,7 @@ public static class GameStatus
     }
     public static int GetLevelTriedCount()
     {
-        return LevelSuccssCount;
+        return LevelTriedCount;
     }
     public static int GetLevelSuccessCount()
     {

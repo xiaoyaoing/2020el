@@ -917,7 +917,7 @@ MonoBehaviour:
   OnLevelFail:
     Description: "\u9762\u5BF9\u4E0D\u660E\u7684\u75AB\u60C5\uFF0C\u6B66\u6C49\u5E02\u653F\u5E9C\u8FC5\u901F\u505A\u51FA\u4E86\u56DE\u5E94\uFF0C\u5173\u95ED\u4E86\u534E\u5357\u6D77\u9C9C\u5E02\u573A\u30021\u67083\u65E5\uFF0C\u6B66\u6C49\u5E02\u536B\u8BA1\u59D4\u53D1\u5E03\u901A\u544A\uFF0C\u7B26\u5408\u6761\u4EF6\u75C5\u4F8B\u589E\u52A0\u81F344\u4F8B\u3002\u672A\u53D1\u73B0\u660E\u663E\u4EBA\u4F20\u4EBA\u73B0\u8C61\uFF0C\u672A\u53D1\u73B0\u533B\u52A1\u4EBA\u5458\u611F\u67D3\u3002\u4F3C\u4E4E\u8FD9\u4E00\u573A\u75AB\u60C5\u5DF2\u7ECF\u88AB\u627C\u6740\u5728\u4E86\u6447\u7BEE\u4E4B\u4E2D\u3002 "
     Image: {fileID: 21300000, guid: f4ac575d87dc74346973bbae8798222f, type: 3}
-    ButtonName: "\u786E\u5B9A"
+    ButtonName: "\u91CD\u8BD5"
     Audio: {fileID: 8300000, guid: b1bb9c0071e19c944b4e857631402fbb, type: 3}
 --- !u!61 &363520752
 BoxCollider2D:
@@ -3448,6 +3448,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
+  QueuedEvent:
+    Description: 
+    Image: {fileID: 0}
+    ButtonName: 
+    Audio: {fileID: 0}
+  Queued: 1
 --- !u!114 &2018580636
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -24,9 +24,12 @@ public class EventWindowControl : MonoBehaviour
     private AudioSource AudioPlayer;
 
     public UnityAction AfterStart;
+    public EventInformation QueuedEvent;
+    public bool Queued;
 
     void Start()
     {
+        Queued = false;
         EventWindowTr = GetComponent<Transform>();
         EventDescription = EventWindowTr.Find("Text").GetComponent<Text>();
         EventImage = EventWindowTr.Find("Image").gameObject.GetComponent<Image>();
@@ -40,8 +43,20 @@ public class EventWindowControl : MonoBehaviour
 
     public void ShowEvent(EventInformation Info)
     {
+        Queued = false;
+        if (gameObject.activeSelf)
+        {
+            QueuedEvent = Info;
+            Queued = true;
+        }
         EventDescription.text = Info.Description;
-        EventImage.sprite = Info.Image;
+        if (Info.Image)
+        {
+            EventImage.gameObject.SetActive(true);
+            EventImage.sprite = Info.Image;
+        }
+        else
+            EventImage.gameObject.SetActive(false);
         ConfirmButton.GetComponentInChildren<Text>().text = Info.ButtonName;
         if (Info.CallBack != null)
             ConfirmButton.onClick.AddListener(Info.CallBack);

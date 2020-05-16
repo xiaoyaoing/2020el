@@ -4,10 +4,18 @@ public class CanvasControl : MonoBehaviour
 {
     // Transform component is used to get childs of current object
     private Transform CanvasTr;
+    private EventWindowControl EvWin;
 
     void Start()
     {
         CanvasTr = GetComponent<Transform>();
+        EvWin = GetComponentInChildren<EventWindowControl>();
+    }
+
+    private void Update()
+    {
+        if (!EvWin.gameObject.activeSelf && EvWin.Queued)
+            EvWin.ShowEvent(EvWin.QueuedEvent);
     }
 
     public void DisableOtherWindows(GameObject ExceptWindow)
