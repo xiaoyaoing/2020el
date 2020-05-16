@@ -536,6 +536,7 @@ GameObject:
   - component: {fileID: 228567841}
   - component: {fileID: 228567842}
   - component: {fileID: 228567843}
+  - component: {fileID: 228567844}
   m_Layer: 0
   m_Name: Xi'an
   m_TagString: Untagged
@@ -638,6 +639,32 @@ MonoBehaviour:
     Image: {fileID: 21300000, guid: 24e3662d3bf4b8d438580c7662c4c66b, type: 3}
     ButtonName: "\u786E\u5B9A"
     Audio: {fileID: 8300000, guid: 1543c4927c8088d45a2b7217a5a1e4ef, type: 3}
+--- !u!61 &228567844
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228567840}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.9602138, y: 0.8144001}
+    newSize: {x: 1.3333334, y: 1.3333334}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9602138, y: 0.8144001}
+  m_EdgeRadius: 0
 --- !u!1 &323749967
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,6 +676,7 @@ GameObject:
   - component: {fileID: 323749968}
   - component: {fileID: 323749969}
   - component: {fileID: 323749970}
+  - component: {fileID: 323749971}
   m_Layer: 0
   m_Name: Guangzhou
   m_TagString: Untagged
@@ -750,6 +778,32 @@ MonoBehaviour:
     Image: {fileID: 21300000, guid: 030b68caae666444fa3e226e4e510ffc, type: 3}
     ButtonName: "\u786E\u5B9A"
     Audio: {fileID: 8300000, guid: 26f439f2963b72f4b93a3a7dbc004b31, type: 3}
+--- !u!61 &323749971
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323749967}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.045, y: 1.045}
+    newSize: {x: 1.3333334, y: 1.3333334}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.045, y: 1.045}
+  m_EdgeRadius: 0
 --- !u!1 &363520748
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,6 +815,7 @@ GameObject:
   - component: {fileID: 363520749}
   - component: {fileID: 363520750}
   - component: {fileID: 363520751}
+  - component: {fileID: 363520752}
   m_Layer: 0
   m_Name: Wuhan
   m_TagString: Untagged
@@ -864,6 +919,32 @@ MonoBehaviour:
     Image: {fileID: 21300000, guid: f4ac575d87dc74346973bbae8798222f, type: 3}
     ButtonName: "\u786E\u5B9A"
     Audio: {fileID: 8300000, guid: b1bb9c0071e19c944b4e857631402fbb, type: 3}
+--- !u!61 &363520752
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363520748}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.838, y: 0.726}
+    newSize: {x: 1.3333334, y: 1.3333334}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.838, y: 0.726}
+  m_EdgeRadius: 0
 --- !u!1 &504440160
 GameObject:
   m_ObjectHideFlags: 0
@@ -2072,6 +2153,7 @@ GameObject:
   - component: {fileID: 1377299917}
   - component: {fileID: 1377299918}
   - component: {fileID: 1377299919}
+  - component: {fileID: 1377299920}
   m_Layer: 0
   m_Name: Chongqing
   m_TagString: Untagged
@@ -2174,6 +2256,32 @@ MonoBehaviour:
     Image: {fileID: 21300000, guid: 479a47e2ef1ca8246a8c59dfdf42dada, type: 3}
     ButtonName: "\u786E\u5B9A"
     Audio: {fileID: 8300000, guid: 1b62f7d8f1254c74f8a55ef6d18656e4, type: 3}
+--- !u!61 &1377299920
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377299916}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.45, y: 0.865}
+    newSize: {x: 1.3333334, y: 1.3333334}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.45, y: 0.865}
+  m_EdgeRadius: 0
 --- !u!1 &1467693013
 GameObject:
   m_ObjectHideFlags: 0
@@ -2335,6 +2443,7 @@ GameObject:
   - component: {fileID: 1578635628}
   - component: {fileID: 1578635629}
   - component: {fileID: 1578635630}
+  - component: {fileID: 1578635631}
   m_Layer: 0
   m_Name: Beijing
   m_TagString: Untagged
@@ -2435,6 +2544,32 @@ MonoBehaviour:
     Image: {fileID: 0}
     ButtonName: "\u786E\u5B9A"
     Audio: {fileID: 0}
+--- !u!61 &1578635631
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578635627}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.7355534, y: 0.64325005}
+    newSize: {x: 1.3333334, y: 1.3333334}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7355534, y: 0.64325005}
+  m_EdgeRadius: 0
 --- !u!1 &1615123955
 GameObject:
   m_ObjectHideFlags: 0

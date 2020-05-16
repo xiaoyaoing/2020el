@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class CityControl : MonoBehaviour
@@ -55,5 +56,10 @@ public class CityControl : MonoBehaviour
     public string GetRegionName()
     {
         return LevelRegionName;
+    }
+
+    private void OnMouseDown()
+    {
+        Select();   
     }
 }
