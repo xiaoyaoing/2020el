@@ -25,9 +25,15 @@ public class PlayerMoveControl : MonoBehaviour
         GroundMask = LayerMask.GetMask("Ground");
     }
 
-    void Update()
+    void FixedUpdate()
     {
         Move();
+    }
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Jump") && JumpBox.IsTouchingLayers(GroundMask))
+            GravityScale = -GravityScale;
     }
     void Move()
     {
@@ -46,8 +52,6 @@ public class PlayerMoveControl : MonoBehaviour
         else if (MaxHorizontalSpeed > PlayerRb.velocity.x)
             PlayerRb.AddForce(new Vector2((MaxHorizontalSpeed - PlayerRb.velocity.x) / Time.fixedDeltaTime * PlayerRb.mass, 0));
 
-        if (Input.GetButtonDown("Jump") && JumpBox.IsTouchingLayers(GroundMask))
-            GravityScale = -GravityScale;
         PlayerRb.gravityScale = GravityScale;
         if (Mathf.Abs(PlayerRb.velocity.x) > MaxHorizontalSpeed)
             PlayerRb.velocity = new Vector2(MaxHorizontalSpeed * PlayerRb.velocity.x / Mathf.Abs(PlayerRb.velocity.x), PlayerRb.velocity.y);

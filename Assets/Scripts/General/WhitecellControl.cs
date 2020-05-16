@@ -22,7 +22,7 @@ public class WhitecellControl : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (Stopped)
         {
