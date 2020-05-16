@@ -2532,7 +2532,7 @@ MonoBehaviour:
   OnSelectCity:
     Description: "\u4E00\u80A1\u795E\u79D8\u7684\u529B\u91CF\u7EC4\u7EC7\u4E86\u75C5\u6BD2\u7684\u4F20\u64AD"
     Image: {fileID: 21300000, guid: 76f1810007d85b44e9b6f46c20d1d582, type: 3}
-    ButtonName: "\u5F00\u59CB"
+    ButtonName: "\u9000\u7F29"
     Audio: {fileID: 0}
   OnLevelSuccess:
     Description: 
