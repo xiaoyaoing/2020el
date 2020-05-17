@@ -1830,7 +1830,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: JOURNEY TO THE WEST (x
+  m_Text: "\u65B0\u51A0\u5386\u7A0B"
 --- !u!222 &1752273050
 CanvasRenderer:
   m_ObjectHideFlags: 0
