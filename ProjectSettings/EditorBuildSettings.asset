@@ -21,12 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Wuhan.unity
     guid: a681785d4c1eae54bb8e95505f2b55b3
   - enabled: 1
-    path: Assets/Scenes/GuangZhou.unity
+    path: Assets/Scenes/Guangzhou.unity
     guid: d1df4fb9caf500b4690ffe43bee38ae7
   - enabled: 1
     path: Assets/Scenes/HelloScene.unity
     guid: e4c8b8a566693534685298c8e54deec9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Sample.unity
     guid: 648365c5a8deb31439c638e6bd58291a
   m_configObjects: {}
