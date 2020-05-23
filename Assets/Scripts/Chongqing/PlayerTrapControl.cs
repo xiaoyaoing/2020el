@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,11 +9,20 @@ public class PlayerTrapControl : MonoBehaviour
     private bool Trapped = false;
     private Rigidbody2D PlayerRb;
     private PlayerMoveControl Move;
+    private SpriteRenderer PlayerImage;
 
     void Start()
     {
         PlayerRb = GetComponent<Rigidbody2D>();
         Move = GetComponent<PlayerMoveControl>();
+        PlayerImage = transform.GetChild(1).GetComponent<SpriteRenderer>();
+    }
+
+    private void Update()
+    {
+        if (IsImmue() && Time.time - Math.Floor(Time.time) < 0.5)
+            PlayerImage.color = new Color();
+        else PlayerImage.color = new Color(255, 255, 255);
     }
 
     public bool IsImmue()

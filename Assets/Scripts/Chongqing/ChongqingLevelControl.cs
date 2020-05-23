@@ -36,9 +36,14 @@ public class ChongqingLevelControl : LevelControl
         for (int i = 0; i < PMs.childCount; ++i)
             PMRbs[i] = PMs.GetChild(i).GetComponent<Rigidbody2D>();
     }
+
     void Update()
     {
         if (IsInQTE) QTE();
+    }
+
+    void FixedUpdate()
+    {
         if (!BlowPaused || BlowOnce)
             Breathe();
     }
@@ -78,11 +83,11 @@ public class ChongqingLevelControl : LevelControl
 
     private void Breathe()
     {
-        if (Time.time - LastBlowTime <= 0.8f)
+        if (Time.time - LastBlowTime <= 0.5f)
         {
             if (!AudioPlayer.isPlaying)
                 AudioPlayer.Play();
-            PlayerRb.AddForce(new Vector2(-10, 0));
+            PlayerRb.AddForce(new Vector2(-42, 0));
             for (int i = 0; i < PMRbs.Length; ++i)
                 PMRbs[i].AddForce(new Vector2(-20, 0));
         }
