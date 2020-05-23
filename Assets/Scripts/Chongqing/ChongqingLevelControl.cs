@@ -11,9 +11,8 @@ public class ChongqingLevelControl : LevelControl
 
     private bool IsInQTE;
 
-    private string[] QTEButtonSerial = { "Jump", "Jump", "Jump", "Jump", "Jump" };
-    private float MinQTEButtonInterval = 0.1f;
-    private float MaxQTEButtonInterval = 1;
+    private string[] QTEButtonSerial = { "Jump", "Jump", "Jump", "Jump", "Jump", "Jump", "Jump", "Jump", "Jump", "Jump" };
+    private float MaxQTEButtonInterval = 0.3f;
     private int CurrentButtonIndex;
     private float LastButtonPressedTime;
 
@@ -64,21 +63,15 @@ public class ChongqingLevelControl : LevelControl
     }
     private void QTE()
     {
+        if (Time.time - LastButtonPressedTime > (CurrentButtonIndex == 0 ? 1 : MaxQTEButtonInterval))
+            OnLevelFail();
         if (Input.GetButtonDown(QTEButtonSerial[CurrentButtonIndex]))
         {
-            // Too quick
-            if (Time.time - LastButtonPressedTime < MinQTEButtonInterval)
-                OnLevelFail();
-            else
-            {
-                ++CurrentButtonIndex;
-                LastButtonPressedTime = Time.time;
-                if (CurrentButtonIndex == QTEButtonSerial.Length)
-                    ExitQTE();
-            }
+            ++CurrentButtonIndex;
+            LastButtonPressedTime = Time.time;
+            if (CurrentButtonIndex == QTEButtonSerial.Length)
+                ExitQTE();
         }
-        else if (Time.time - LastButtonPressedTime > MaxQTEButtonInterval)
-            OnLevelFail();
     }
 
     private void Breathe()

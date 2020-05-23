@@ -21,7 +21,7 @@ public class PlayerTrapControl : MonoBehaviour
     private void Update()
     {
         if (IsImmue() && Time.time - Math.Floor(Time.time) < 0.5)
-            PlayerImage.color = new Color();
+            PlayerImage.color = new Color(255, 255, 255, 0.5f);
         else PlayerImage.color = new Color(255, 255, 255);
     }
 
