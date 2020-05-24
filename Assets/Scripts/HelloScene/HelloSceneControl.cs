@@ -6,7 +6,7 @@ public class HelloSceneControl : MonoBehaviour
 {
     void Update()
     {
-        if (Input.anyKeyDown)
+        if (Input.anyKeyDown && Time.timeSinceLevelLoad >= 1.5f)
             UnityEngine.SceneManagement.SceneManager.LoadScene("WorldMap");
     }
 }
