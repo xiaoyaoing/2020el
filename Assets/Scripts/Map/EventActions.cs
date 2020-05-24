@@ -19,7 +19,7 @@ public static class EventActions
         Description = "病毒的来袭让人们猝不及防。武汉的感染人数迅速增加，接近十万人，其他地方也相继出现了疫情。\n"
         + "在疫情的传播逐渐超出控制范围之时，人们只剩下了一种选择。\n"
         + "一月二十二日，武汉市采取了史无前例的大规模封城措施。在这之后，全国各地也采取了类似的举措。\n"
-        + "这场疫情让人们付出了巨大的代价，虽然目前多国疫情已经得到了基本控制，但它必将给这个世界不可磨灭的影响......",
+        + "这场疫情让人们付出了巨大的代价，虽然目前多国疫情已经得到了基本控制，但它必将给这个世界造成不可磨灭的影响......",
         CallBack = Application.Quit,
         ButtonName = "确定"
     };
@@ -28,8 +28,15 @@ public static class EventActions
         if (GameStatus.GetLevelTriedCount() != 4) return;
         var Window = GameObject.Find("Canvas").transform.Find("Event Window").GetComponent<EventWindowControl>();
         if (GameStatus.GetLevelSuccessCount() >= 3)
+        {
+            GameSuccess.Image = GameObject.Find("ImageHolder").GetComponent<ImageHolder>().SuccessImage;
             Window.ShowEvent(GameSuccess);
-        else Window.ShowEvent(GameFail);
+        }
+        else
+        {
+            GameFail.Image = GameObject.Find("ImageHolder").GetComponent<ImageHolder>().FailImage;
+            Window.ShowEvent(GameFail);
+        }
     };
     public static Dictionary<string, UnityAction> LevelSuccess = new Dictionary<string, UnityAction>
     {
